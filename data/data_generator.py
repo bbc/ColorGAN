@@ -32,7 +32,7 @@ class Imagenet:
                  get_labels=False,
                  get_categorical=False):
 
-        assert mode in ['train', 'test', 'val'], 'Invalid mode'
+        assert mode in ['train', 'test'], 'Invalid mode'
 
         self.mode = mode
         self.path = os.path.join(cf.data_path, mode)
