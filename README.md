@@ -9,10 +9,10 @@
 [AlanFmeaton-web]: https://www.insight-centre.org/users/alan-smeaton
 [NoelEOConnor-web]: https://github.com/marc-gorriz/ColorGAN/blob/master/authors/NoelEOConnor.jpg
 
-[MarcGorriz-photo]: https://github.com/marc-gorriz/ColorGAN/blob/master/authors/MarcGorriz.jpg
-[MartaMrak-photo]: https://github.com/marc-gorriz/ColorGAN/blob/master/authors/MartaMrak.jpg
-[AlanFmeaton-photo]: https://github.com/marc-gorriz/ColorGAN/blob/master/authors/AlanFSmeaton.jpg
-[NoelEOConnor-photo]: https://github.com/marc-gorriz/ColorGAN/blob/master/authors/NoelEOConnor.jpg
+[MarcGorriz-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/blob/master/authors/MarcGorriz.jpg
+[MartaMrak-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/authors/MartaMrak.jpg
+[AlanFmeaton-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/authors/AlanFSmeaton.jpg
+[NoelEOConnor-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/blob/master/authors/NoelEOConnor.jpg
 
 A joint collaboration between:
 
