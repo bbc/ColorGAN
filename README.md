@@ -7,12 +7,12 @@
 [MarcGorriz-web]: https://www.bbc.co.uk/rd/people/marc-gorriz-blanch
 [MartaMrak-web]: https://www.bbc.co.uk/rd/people/marta-mrak
 [AlanFmeaton-web]: https://www.insight-centre.org/users/alan-smeaton
-[NoelEOConnor-web]: https://github.com/marc-gorriz/ColorGAN/blob/master/authors/NoelEOConnor.jpg
+[NoelEOConnor-web]: https://raw.githubusercontent.com/bbc/ColorGAN/master/authors/NoelEOConnor.jpg
 
-[MarcGorriz-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/blob/master/authors/MarcGorriz.jpg
+[MarcGorriz-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/authors/MarcGorriz.jpg
 [MartaMrak-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/authors/MartaMrak.jpg
 [AlanFmeaton-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/authors/AlanFSmeaton.jpg
-[NoelEOConnor-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/blob/master/authors/NoelEOConnor.jpg
+[NoelEOConnor-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/authors/NoelEOConnor.jpg
 
 A joint collaboration between:
 
@@ -24,16 +24,16 @@ A joint collaboration between:
 [insight-web]: https://www.insight-centre.org/ 
 [dcu-web]: http://www.dcu.ie/
 
-[logo-bbc]: https://github.com/marc-gorriz/ColorGAN/blob/master/logos/bbc.png  "BBC Research & Development"
-[logo-insight]: https://github.com/marc-gorriz/ColorGAN/blob/master/logos/insight.jpg "Insight Centre for Data Analytics"
-[logo-dcu]: https://github.com/marc-gorriz/ColorGAN/blob/master/logos/dcu.png "Dublin City University"
+[logo-bbc]: https://raw.githubusercontent.com/bbc/ColorGAN/master/logos/bbc.png  "BBC Research & Development"
+[logo-insight]: https://raw.githubusercontent.com/bbc/ColorGAN/master/logos/insight.jpg "Insight Centre for Data Analytics"
+[logo-dcu]: https://raw.githubusercontent.com/bbc/ColorGAN/master/logos/dcu.png "Dublin City University"
 
 ## Abstract
 In this work recent advances in conditional adversarial networks are investigated to develop an end-to-end architecture based on Convolutional Neural Networks (CNNs) to directly map realistic colours to an input greyscale image. Observing that existing colourisation methods sometimes exhibit a lack of colourfulness, this work proposes a method to improve colourisation results. In particular, the method uses Generative Adversarial Neural Networks (GANs) and focuses on improvement of training stability to enable better generalisation in large multi-class image datasets. Additionally, the integration of instance and batch normalisation layers in both generator and discriminator is introduced to the popular U-Net architecture, boosting the network capabilities to generalise the style changes of the content. The method has been tested using the [ILSVRC 2012 dataset](http://image-net.org/challenges/LSVRC/2012/), achieving improved automatic colourisation results compared to other methods based on GANs.
 
 ![visualisation-fig]
 
-[visualisation-fig]: https://github.com/marc-gorriz/ColorGAN/blob/master/logos/visualisation.png
+[visualisation-fig]: https://raw.githubusercontent.com/bbc/ColorGAN//master/logos/visualisation.png
 
 ## Publication
 2019 IEEE 21st International Workshop on Multimedia Signal Processing (MMSP). Find the paper discribing our work on [IEEE Xplore](https://ieeexplore.ieee.org/document/8901712) and [arXiv](https://arxiv.org/abs/1908.09873).
@@ -56,7 +56,7 @@ Please cite with the following Bibtex code:
 The model is implemented in [Keras](https://github.com/fchollet/keras/tree/master/keras), which at its time is developed over [TensorFlow](https://www.tensorflow.org). Also, this code should be compatible with Python 3.6.
 
 ```
-pip install -r https://github.com/marc-gorriz/ColorGAN/blob/master/requeriments.txt
+pip install -r https://raw.githubusercontent.com/bbc/ColorGAN/master/requeriments.txt
 ```
 Import the Open Source libraries for instance and spectral normalistion. Refer to ```models/layers``` directory
 
@@ -108,8 +108,8 @@ and innovation programme under the Marie Skłodowska Curie grant agreement No 76
 | [JOLT Project](JOLT-web) | [European Comission](EU-web) |
 
 
-[JOLT-photo]: https://github.com/marc-gorriz/ColorGAN/blob/master/logos/jolt.png "JOLT"
-[EU-photo]: https://github.com/marc-gorriz/ColorGAN/blob/master/logos/eu.png "European Comission"
+[JOLT-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/logos/jolt.png "JOLT"
+[EU-photo]: https://raw.githubusercontent.com/bbc/ColorGAN/master/logos/eu.png "European Comission"
 
 
 [JOLT-web]: http://joltetn.eu/
