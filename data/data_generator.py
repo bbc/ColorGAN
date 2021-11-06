@@ -32,7 +32,7 @@ class Imagenet:
                  get_labels=False,
                  get_categorical=False):
 
-        assert mode in ['train', 'test', 'val'], 'Invalid mode'
+        assert mode in ['train', 'test'], 'Invalid mode'
 
         self.mode = mode
         self.path = os.path.join(cf.data_path, mode)
@@ -67,19 +67,23 @@ class Imagenet:
         self._chunk_index = 0
         self._total_batches_seen = 0
 
-        self.nb_classes = 1000
+        self._labels = self._process_labels()
         self._filenames = self._process_data(cf.samples_rate)
         self._index_generator = self._flow_index()
         self.val_batch = self._get_val_batch()
         self._step = 0
 
+    def _process_labels(self):
+        with open(SYNSET_WORDS, 'r') as f:
+            labels = {row[0]: row[-1] for row in csv.reader(f, delimiter=" ")}
+            self.nb_classes = len([*labels])
+        return labels
+
     def _process_data(self, samples_rate, ext=('jpg', 'jpeg', 'bmp', 'png', 'ppm', 'tif', 'tiff')):
         ext = tuple('.%s' % e for e in ((ext,) if isinstance(ext, str) else ext))
         names = [os.path.join(root, f) for root, _, files in os.walk(self.path)
                  for f in files if f.lower().endswith(ext)]
-        
-        self._chunk_size = np.minimum(int(len(names) * samples_rate), self._chunk_size)
-        
+
         self.samples = int(len(names) * samples_rate) // self._chunk_size * self._chunk_size
         self.nb_steps = self.samples // self.batch_size
         self._nb_chunks = self.samples // self._chunk_size
