@@ -14,15 +14,15 @@
 # ==============================================================================
 
 experiment_name = "exp2_in"                             # experiment name
-experiment_path = "experiment/path"                     # experiment base path
-output_path = experiment_path + experiment_name
+experiment_path = "/app/experiments"                    # experiment base path
+output_path = "%s/%s" % (experiment_path, experiment_name)
 
 # Model parameters
 core_model = "in_model"                                 # [bn_model, in_model, bn_sn_model, in_sn_model, ibn_model]
 d_scales = 1                                            # number of multi discriminator scales
 
 # Data parameters
-data_path = "data/path"                                 # data path for train and test
+data_path = "/app/data"                                 # data path for train and test
 input_shape = (256, 256)                                # input shape
 input_color_mode = 'rgb'                                # input colour space (same as data path content)
 output_color_mode = 'lab'                               # output colour space

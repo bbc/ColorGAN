@@ -13,13 +13,13 @@
 # limitations under the License.
 # ==============================================================================
 
-experiment_name = "exp1_bn"                             # experiment name
+experiment_name = "exp6_bn_sn_md"                       # experiment name
 experiment_path = "/app/experiments"                    # experiment base path
 output_path = "%s/%s" % (experiment_path, experiment_name)
 
 # Model parameters
-core_model = "bn_model"                                 # [bn_model, in_model, bn_sn_model, in_sn_model, ibn_model]
-d_scales = 1                                            # number of multi discriminator scales
+core_model = "bn_sn_model"                              # [bn_model, in_model, bn_sn_model, in_sn_model, ibn_model]
+d_scales = 3                                            # number of multi discriminator scales
 
 # Data parameters
 data_path = "/app/data"                                 # data path for train and test

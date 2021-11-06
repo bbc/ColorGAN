@@ -37,7 +37,7 @@ if __name__ == '__main__':
         datagen = Imagenet(cf, mode='train')
         gan.train(datagen)
     elif args.action == "test":
-        datagen = Imagenet(cf, mode='test')
+        datagen = Imagenet(cf, mode='val')
         gan.test(datagen)
     else:
         raise ValueError('Invalid action')
