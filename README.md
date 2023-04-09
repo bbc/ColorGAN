@@ -56,7 +56,7 @@ Please cite with the following Bibtex code:
 The model is implemented in [Keras](https://github.com/fchollet/keras/tree/master/keras), which at its time is developed over [TensorFlow](https://www.tensorflow.org). Also, this code should be compatible with Python 3.6.
 
 ```
-pip install -r https://github.com/marc-gorriz/ColorGAN/blob/master/requeriments.txt
+pip install -r https://github.com/marc-gorriz/ColorGAN/blob/master/requirements.txt
 ```
 Import the Open Source libraries for instance and spectral normalistion. Refer to ```models/layers``` directory
 
